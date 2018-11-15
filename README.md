@@ -25,4 +25,9 @@ Following operations are allowed :
 4) Division
 
 To run the test cases, Go to root directory of the project and run following command.
+
 vendor/bin/simple-phpunit
+
+Learn more about phpunit bridge
+
+https://symfony.com/doc/current/components/phpunit_bridge.html
