@@ -23,3 +23,6 @@ Following operations are allowed :
 2) Subtraction
 3) Multiplication
 4) Division
+
+To run the test cases, Go to root directory of the project and run following command.
+vendor/bin/simple-phpunit
