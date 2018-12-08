@@ -42,6 +42,9 @@ class CalculatorController extends AbstractController
                 $request->getContent(),
                 true
             );
+            if(empty($data['operation'])) {
+                throw new Exception('Invalid operation', Response::HTTP_BAD_REQUEST);
+            }
             $serviceObject = $this->factoryObject->getServiceObject($data['operation']);
             $result = $serviceObject->calculate($data['params']);
             return $this->json([
